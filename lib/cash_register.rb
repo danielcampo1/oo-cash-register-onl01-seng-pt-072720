@@ -15,6 +15,7 @@ class CashRegister
     self.last_item = price
     self.items.concat([title] * quantity)
     self.total += price * quantity
+    binding.pry
     self.last_transaction = self.last_item * quantity
   end
   
