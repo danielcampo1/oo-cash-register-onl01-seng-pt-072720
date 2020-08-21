@@ -1,7 +1,7 @@
 require 'pry'
 class CashRegister
   
-  attr_accessor :total, :discount, :price, :last_item
+  attr_accessor :total, :discount, :item, :last_item
   
   def initialize(discount = nil)
     @total = 0
@@ -15,7 +15,6 @@ class CashRegister
     self.last_item = price
       self.items.concat([title] * quantity)
       self.total += price * quantity
-  binding.pry 
   end
   
 end
