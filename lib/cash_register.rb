@@ -15,7 +15,7 @@ class CashRegister
     self.last_item = price
     self.items.concat([title] * quantity)
     self.total += price * quantity
-    self.last_transaction = self.price * quantity
+    self.last_transaction = self.items * quantity
   end
   
   def apply_discount
