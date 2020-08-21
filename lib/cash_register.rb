@@ -15,7 +15,7 @@ class CashRegister
     self.last_item = price
     self.items.concat([title] * quantity)
     self.total += price * quantity
-    binding.pry
+
   end
   
   def apply_discount
@@ -26,6 +26,7 @@ class CashRegister
     else
       "There is no discount to apply."
     end
+    binding.pry
   end
   
   def void_last_transaction
